@@ -47,7 +47,6 @@ rocxl .
 # a blank ro-crate will be bootstrapped
 cp -r Audio_Anonymised data/
 cp -r Transcripts_Anonymised data/
-cp additional-ro-crate-metadata.xlsx data/
 xlro -a .
 # it will read additional-ro-crate-metadata.xlsx
 ```
@@ -72,3 +71,28 @@ make BASE_DATA_DIR=/Users/moises/source/github/Language-Research-Technology/corp
  CORPUS_NAME=accented-australian-english \
  DATA_DIR=/Users/moises/source/github/Language-Research-Technology/corpus-tools-accented-australian-english/data
  ```
+
+This will add the data into the OCFL repository
+```
+/opt/storage/oni
+```
+
+## OCFL-to-Oni
+
+git clone https://github.com/Language-Research-Technology/oni-ui.git
+
+```
+cd oni-ui
+npm install
+docker-compose up
+```
+
+open new terminal window
+in oni-ui:
+```
+node structural-index.js
+node elastic-ocfl-oni-index.js
+```
+
+
+
