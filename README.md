@@ -87,8 +87,8 @@ npm install
 docker-compose up
 ```
 
-open new terminal window
-in oni-ui:
+open new terminal window in oni-ui:
+
 ```
 node structural-index.js
 node elastic-ocfl-oni-index.js
