@@ -94,5 +94,11 @@ node structural-index.js
 node elastic-ocfl-oni-index.js
 ```
 
+start the UI:
+
+```
+cd portal
+npm run dev
+```
 
 
